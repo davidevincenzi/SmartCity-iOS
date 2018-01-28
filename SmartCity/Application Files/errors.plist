@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSURLErrorDomain</key>
+	<string>*</string>
+	<key>AuthDomainError</key>
+	<dict>
+		<key>1</key>
+		<string>There was an error with your e-mail and password combination. Please try again.</string>
+		<key>2</key>
+		<string>This e-mail is already taken. Please Sign in or reset your password.</string>
+	</dict>
+</dict>
+</plist>

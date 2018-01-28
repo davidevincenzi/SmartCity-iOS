@@ -7,15 +7,48 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+import Firebase
+
+var token: String? {
+    return SessionServices.current?.authToken
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    static var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    let rootViewController = RootViewController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+
+        // Restore Session
+        do {
+            let services = SessionServices()
+            if let session = services.find().first {
+                try services.restore(session: session)
+            }
+        } catch let error {
+            print(error)
+        }
+        
+        // Setup Root VC
+        rootViewController.loadViewIfNeeded()
+        window?.rootViewController = rootViewController
+        
+        // Setup IQKeyboardAvoiding
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
+        
+        // Global appearence
+        let navAppearence = UINavigationBar.appearance()
+        navAppearence.tintColor = UIColor(named: .PrimaryColor)
+        
         return true
     }
 

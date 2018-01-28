@@ -14,6 +14,9 @@ target 'SmartCity' do
 	pod 'SwiftyJSON'
 	pod 'ObjectMapper', :git => 'https://github.com/Hearst-DD/ObjectMapper.git', :branch => 'swift-4'
 
+	# Database
+	pod 'RealmSwift'
+
 	# Infrastructure
 	pod "PromiseKit"
 	pod "PromiseKit/UIImagePickerController"
@@ -25,5 +28,6 @@ target 'SmartCity' do
 
 	# UI
 	pod 'MBProgressHUD'
+	pod 'SwiftRichString', '~> 1.0.0'
 
 end

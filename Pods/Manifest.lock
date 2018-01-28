@@ -51,10 +51,16 @@ PODS:
     - PromiseKit/UIKit
   - PromiseKit/UIKit (4.5.1):
     - PromiseKit/CorePromise
+  - Realm (3.1.0):
+    - Realm/Headers (= 3.1.0)
+  - Realm/Headers (3.1.0)
+  - RealmSwift (3.1.0):
+    - Realm (= 3.1.0)
   - Result (3.2.4)
   - SDWebImage (4.2.3):
     - SDWebImage/Core (= 4.2.3)
   - SDWebImage/Core (4.2.3)
+  - SwiftRichString (1.0.1)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
@@ -67,7 +73,9 @@ DEPENDENCIES:
   - PromiseKit
   - PromiseKit/CoreLocation (~> 4.0)
   - PromiseKit/UIImagePickerController
+  - RealmSwift
   - SDWebImage
+  - SwiftRichString (~> 1.0.0)
   - SwiftyJSON
 
 EXTERNAL SOURCES:
@@ -95,10 +103,13 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   ObjectMapper: 739e5530df22248823f6cc7ed9e016ebf2c26a27
   PromiseKit: 445dac9b2c3c3b4b31b5f842bc325700b848a8bd
+  Realm: 09513d7c054678d65cd02ce09871f805b0d758ac
+  RealmSwift: e868fee9b10e5490ad94b6b6ecd9027944da1824
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  SwiftRichString: 2111627a29af277094a9e5d4d1bf6bfe0b8212ac
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: e8e136b688c22d314122a0dcbfd55db594d90a4b
+PODFILE CHECKSUM: 8dc254bd22d9f6f52957c676dfa16affe06ce865
 
 COCOAPODS: 1.3.1

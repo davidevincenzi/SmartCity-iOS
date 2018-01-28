@@ -1,0 +1,351 @@
+Sr.No,City,Population,Province,Region
+,,(2004 census),,
+1,Casablanca,"29,36,874",Casablanca,Grand Casablanca
+2,Fes,"9,44,376",Fes,Fes-Boulemane
+3,Sale,"8,14,871",Sale,Rabat-Sale-Zemmour-Zaer
+4,Marrakesh,"7,94,620",Marrakesh,Marrakesh-Tensift-El Haouz
+5,Tangier,"6,64,295",Tanger Assila,Tangier-Tetouan
+6,Rabat,"6,20,996",Rabat,Rabat-Sale-Zemmour-Zaer
+7,Meknes,"5,35,066",Meknes,Meknes-Tafilalet
+8,Oujda,"3,98,131",Oujda Angad,Oriental
+9,Kenitra,"3,52,058",Kenitra,Gharb-Chrarda-Beni Hssen
+10,Agadir,"3,44,422",Agadir Ida ou tanane,Souss-Massa-Draa
+11,Tetouan,"3,18,698",Tetuan,Tangier-Tetouan
+12,Safi,"2,82,227",Safi,Doukkala-Abda
+13,Temara,"2,25,084",Skhirat temara,Rabat-Sale-Zemmour-Zaer
+14,Inzegan,"1,98,879",Inzegan Ait melloul,Souss-Massa-Draa
+15,Mohammedia,"1,87,708",Mohammedia,Grand Casablanca
+16,Laayoune,"1,79,542",Layoune,Laayoune-Boujdour-Sakia El Hamra
+17,Khouribga,"1,65,976",Khouribga,Chaouia-Ouardigha
+18,Beni Mellal,"1,62,341",Beni Mellal,Tadla-Azilal
+19,Jdida,"1,43,419",Jdida,Doukkala-Abda
+20,Taza,"1,37,778",Taza,Taza-Al Hoceima-Taounate
+21,Ait Melloul,"1,30,105",Inzegan Ait melloul,Souss-Massa-Draa
+22,Nador,"1,24,915",Nador,Oriental
+23,Settat,"1,16,548",Settat,Chaouia-Ouardigha
+24,Ksar El Kbir,"1,07,120",Larache,Tangier-Tetouan
+25,Larache,"1,06,895",Larache,Tangier-Tetouan
+26,Khemisset,"1,04,769",Khemisset,Rabat-Sale-Zemmour-Zaer
+27,Guelmim,"95,599",Guelmim,Guelmim-Es Semara
+28,Berrechid,"89,551",Settat,Chaouia-Ouardigha
+29,Wad Zam,"83,931",Khouribga,Chaouia-Ouardigha
+30,Fkih Ben Saleh,"82,407",Beni Mellal,Tadla-Azilal
+31,Taourirt,"79,664",Taourirt,Oriental
+32,Berkane,"79,570",Berkane,Oriental
+33,Sidi Slimane,"78,036",Kenitra,Gharb-Chrarda-Beni Hssen
+34,Errachidia,"75,239",Errachidia,Meknes-Tafilalet
+35,Sidi Kacem,"74,036",Sidi Kacem,Gharb-Chrarda-Beni Hssen
+36,Khenifra,"71,522",Khenifra,Meknes-Tafilalet
+37,Tifelt,"69,640",Khemisset,Rabat-Sale-Zemmour-Zaer
+38,Essaouira,"69,005",Essaouira,Marrakesh-Tensift-El Haouz
+39,Taroudant,"68,726",Taroudant,Souss-Massa-Draa
+40,El Kelaa des Sraghna,"68,253",Kelaat Sraghna,Marrakesh-Tensift-El Haouz
+41,Oulad Teima,"66,159",Taroudant,Souss-Massa-Draa
+42,Youssoufia,"64,391",Safi,Doukkala-Abda
+43,Sefrou,"63,872",Sefrou,Fes-Boulemane
+44,Ben Guerir,"62,693",Kelaat Sraghna,Marrakesh-Tensift-El Haouz
+45,Tan-Tan,"60,560",Tan-Tan,Guelmim-Es Semara
+46,Ouazzane,"57,367",Sidi Kacem,Gharb-Chrarda-Beni Hssen
+47,Guercif,"56,526",Taza,Taza-Al Hoceima-Taounate
+48,Dakhla,"55,618",ouad eddahab,Oued Ed-Dahab-Lagouira
+49,Hoceima,"54,333",Al Hoceima,Taza-Al Hoceima-Taounate
+50,Fnideq,"53,526",Tetuan,Tangier-Tetouan
+51,Ouarzazate,"53,489",Ouarzazate,Souss-Massa-Draa
+52,Tiznit,"53,441",Tiznit,Souss-Massa-Draa
+53,Suq Sebt Oulad Nama,"51,029",Beni Mellal,Tadla-Azilal
+54,Azrou,"47,535",Ifrane,Meknes-Tafilalet
+55,Lahraouyine,"47,261",Mediouna,Grand Casablanca
+56,Ben Slimane,"45,195",Bensliman,Chaouia-Ouardigha
+57,Midelt,"44,730",Khenifra,Meknes-Tafilalet
+58,Jerada,"43,870",Jrada,Oriental
+59,Skhirat,"42,580",Skhirat temara,Rabat-Sale-Zemmour-Zaer
+60,Souk Larbaa,"42,338",Kenitra,Gharb-Chrarda-Beni Hssen
+61,Ain Harrouda,"41,853",Mohammedia,Grand Casablanca
+62,Boujad,"40,512",Khouribga,Chaouia-Ouardigha
+63,Kasbat Tadla,"39,887",Beni Mellal,Tadla-Azilal
+64,Sidi Bennour,"39,593",Jdida,Doukkala-Abda
+65,Martil,"39,011",Tetuan,Tangier-Tetouan
+66,Lqliaa,"38,220",Inzegan Ait melloul,Souss-Massa-Draa
+67,Cape Bojador,"36,731",Boujdor,Laayoune-Boujdour-Sakia El Hamra
+68,Azemmour,"36,722",Jdida,Doukkala-Abda
+69,M'diq,"36,596",Tetuan,Tangier-Tetouan
+70,Tinghir,"36,388",Ouarzazate,Souss-Massa-Draa
+71,Al Aaroui,"36,021",Nador,Oriental
+72,Chefchaouen,"35,709",Chefchawn,Tangier-Tetouan
+73,M'Rirt,"35,196",Khenifra,Meknes-Tafilalet
+74,Zagora,"34,851",Zagora,Souss-Massa-Draa
+75,El Aioun Sidi Mellouk,"34,767",Taourirt,Oriental
+76,Lamkansa,"33,940",Nouaceur,Grand Casablanca
+77,Smara,"33,910",Esmara,Guelmim-Es Semara
+78,Taounate,"32,600",Taounate,Taza-Al Hoceima-Taounate
+79,Bin Anşār,"31,800",Nador,Oriental
+80,Sidi Yahya El Gharb,"31,705",Kenitra,Gharb-Chrarda-Beni Hssen
+81,Zaio,"29,851",Nador,Oriental
+82,Amalou Ighriben,"28,933",Khenifra,Meknes-Tafilalet
+83,Asilah,"28,120",Tanger Assila,Tangier-Tetouan
+84,Azilal,"27,711",Azilal,Tadla-Azilal
+85,Mechra Bel Ksiri,"27,619",Sidi Kacem,Gharb-Chrarda-Beni Hssen
+86,El Hajeb,"27,132",El hajeb,Meknes-Tafilalet
+87,Bouznika,"27,028",Bensliman,Chaouia-Ouardigha
+88,Imzouren,"26,474",Al Hoceima,Taza-Al Hoceima-Taounate
+89,Tahla,"25,655",Taza,Taza-Al Hoceima-Taounate
+90,BouiZazarene Ihaddadene,"25,480",Nador,Oriental
+91,Ain El Aouda,"25,105",Skhirat temara,Rabat-Sale-Zemmour-Zaer
+92,Bouarfa,"24,527",Figuig,Oriental
+93,Arfoud,"23,622",Errachidia,Meknes-Tafilalet
+94,Demnate,"23,453",Azilal,Tadla-Azilal
+95,Sidi Slimane Echcharraa,"22,889",Berkane,Oriental
+96,Zawiyat cheikh,"22,727",Beni Mellal,Tadla-Azilal
+97,Ain Taoujdate,"22,028",El hajeb,Meknes-Tafilalet
+98,Echemmaia,"21,859",Safi,Doukkala-Abda
+99,Aourir,"21,796",Agadir Ida ou tanane,Souss-Massa-Draa
+100,Sabaa Aiyoun,"21,501",El hajeb,Meknes-Tafilalet
+101,Oulad Ayad,"21,466",Beni Mellal,Tadla-Azilal
+102,Ben Ahmed,"21,360",Settat,Chaouia-Ouardigha
+103,Tabounte,"21,157",Ouarzazate,Souss-Massa-Draa
+104,Jorf El Melha,"20,581",Sidi Kacem,Gharb-Chrarda-Beni Hssen
+105,Missour,"20,332",Boulman,Fes-Boulemane
+106,Laattaouia,"20,237",Kelaat Sraghna,Marrakesh-Tensift-El Haouz
+107,Er-Rich,"20,155",Errachidia,Meknes-Tafilalet
+108,Segangan,"20,134",Nador,Oriental
+109,Rissani,"20,126",Errachidia,Meknes-Tafilalet
+110,Sidi Taibi,"19,979",Kenitra,Gharb-Chrarda-Beni Hssen
+111,Sidi Ifni,"19,967",Tiznit,Souss-Massa-Draa
+112,Ait Ourir,"19,864",Al hawz,Marrakesh-Tensift-El Haouz
+113,Ahfir,"19,477",Berkane,Oriental
+114,El Ksiba,"18,480",Beni Mellal,Tadla-Azilal
+115,El Gara,"18,070",Settat,Chaouia-Ouardigha
+116,Drarga,"17,059",Agadir Ida ou tanane,Souss-Massa-Draa
+117,Imintanoute,"17,051",Chichaoua,Marrakesh-Tensift-El Haouz
+118,Goulmima,"16,582",Errachidia,Meknes-Tafilalet
+119,Karia Ba Mohamed,"16,549",Taounate,Taza-Al Hoceima-Taounate
+120,Mehdya,"16,258",Kenitra,Gharb-Chrarda-Beni Hssen
+121,El Borouj,"16,222",Settat,Chaouia-Ouardigha
+122,Bouhdila,"16,145",Berkane,Oriental
+123,Chichaoua,"15,643",Chichaoua,Marrakesh-Tensift-El Haouz
+124,Bni Bouayach,"15,497",Al Hoceima,Taza-Al Hoceima-Taounate
+125,Oulad Berhil,"15,334",Taroudant,Souss-Massa-Draa
+126,Jmaat Shaim,"15,325",Safi,Doukkala-Abda
+127,Bir Jdid,"15,267",Jdida,Doukkala-Abda
+128,Tata,"15,192",Tata,Guelmim-Es Semara
+129,Boujniba,"15,041",Khouribga,Chaouia-Ouardigha
+130,Temsia,"14,894",Inzegan Ait melloul,Souss-Massa-Draa
+131,Mediouna,"14,653",Mediouna,Grand Casablanca
+132,Kelat Megnouna,"14,190",Ouarzazate,Souss-Massa-Draa
+133,Sebt Gzoula,"13,943",Safi,Doukkala-Abda
+134,Outat El Haj,"13,938",Boulman,Fes-Boulemane
+135,Imouzzer Kandar,"13,725",Sefrou,Fes-Boulemane
+136,Ain Bni Mathar,"13,526",Jrada,Oriental
+137,Bouskoura,"13,453",Nouaceur,Grand Casablanca
+138,Agourai,"13,291",El Hajeb,Meknes-Tafilalet
+139,Midar,"13,229",Nador,Oriental
+140,Lalla Mimouna,"12,967",Kenitra,Gharb-Chrarda-Beni Hssen
+141,Ribat El Kheir,"12,654",Sefrou,Fes-Boulemane
+142,Moulay Driss Zerhoun,"12,580",Meknes,Meknes-Tafilalet
+143,Figuig,"12,516",Figuig,Oriental
+144,Boumia,"12,444",Khenifra,Meknes-Tafilalet
+145,Tamallalt,"12,176",Kelaat Sraghna,Marrakesh-Tensift-El Haouz
+146,Nouaceur,"12,153",Nouaceur,Grand Casablanca
+147,Rommani,"12,149",Khemisset,Rabat-Sale-Zemmour-Zaer
+148,Jorf,"12,135",Errachidia,Meknes-Tafilalet
+149,Ifran,"12,104",Ifrane,Meknes-Tafilalet
+150,Bouizakarn,"11,982",Guelmim,Guelmim-Es Semara
+151,Oulad Mbarek,"11,906",Beni Mellal,Tadla-Azilal
+152,Afourar,"11,898",Azilal,Tadla-Azilal
+153,Zmamra,"11,896",Jdida,Doukkala-Abda
+154,Ait Ishaq,"11,804",Khenifra,Meknes-Tafilalet
+155,Tit Mellil,"11,710",Mediouna,Grand Casablanca
+156,Assa,"11,667",Assa zag,Guelmim-Es Semara
+157,Bhalil,"11,638",Sefrou,Fes-Boulemane
+158,Targuist,"11,560",Al Hoceima,Taza-Al Hoceima-Taounate
+159,Beni Yakhlef,"11,490",Mohammedia,Grand Casablanca
+160,El Menzel,"11,465",Sefrou,Fes-Boulemane
+161,Aguelmous,"11,390",Khenifra,Meknes-Tafilalet
+162,Sid L'Mokhtar,"11,080",Chichaoua,Marrakesh-Tensift-El Haouz
+163,Boumalne Dades,"11,004",Ouarzazate,Souss-Massa-Draa
+164,Farkhana,"10,990",Nador,Oriental
+165,Oulad Abbou,"10,748",Settat,Chaouia-Ouardigha
+166,Amizmiz,"10,727",Al Haouz,Marrakesh-Tensift-El Haouz
+167,Boulanouare,"10,469",Khouribga,Chaouia-Ouardigha
+168,Ben Taieb,"10,446",Nador,Oriental
+169,Ouled Frej,"10,387",Jdida,Doukkala-Abda
+170,Driouch,"10,381",Nador,Oriental
+171,Deroua,"10,373",Settat,Chaouia-Ouardigha
+172,Hattane,"10,284",Khouribga,Chaouia-Ouardigha
+173,El Marsa,"10,229",Layoune,Laayoune-Boujdour-Sakia El Hamra
+174,Tamanar,"9,968",Essaouira,Marrakesh-Tensift-El Haouz
+175,Ait Iaaza,"9,910",Taroudant,Souss-Massa-Draa
+176,Sidi Allal El Bahraoui,"9,884",Khmisset,Rabat-Sale-Zemmour-Zaer
+177,Dar Ould Zidouh,"9,821",Beni Mellal,Tadla-Azilal
+178,Sid Zouine,"9,802",Marrakesh,Marrakesh-Tensift-El Haouz
+179,Boudnib,"9,718",Errachidia,Meknes-Tafilalet
+180,Foum Zguid,"9,611",Tata,Guelmim-Es Semara
+181,Tissa,"9,566",Taounate,Taza-Al Hoceima-Taounate
+182,Jaadar,"9,497",Nador,Oriental
+183,Oulmes,"9,460",Khmisset,Rabat-Sale-Zemmour-Zaer
+184,Bouknadel,"9,314",Sale,Rabat-Sale-Zemmour-Zaer
+185,Harhoura,"9,241",Skhirat temara,Rabat-Sale-Zemmour-Zaer
+186,El Guerdan,"9,220",Taroudant,Souss-Massa-Draa
+187,Selouane,"9,211",Nador,Oriental
+188,Maaziz,"9,190",Khmisset,Rabat-Sale-Zemmour-Zaer
+189,Oulad M'Rah,"9,166",Settat,Chaouia-Ouardigha
+190,Loudaya,"8,989",Marrakesh,Marrakesh-Tensift-El Haouz
+191,Massa,"8,970",Chtouka Ait Baha,Souss-Massa-Draa
+192,Aklim,"8,969",Berkane,Oriental
+193,Ouaouizert,"8,940",Azilal,Tadla-Azilal
+194,Bni Drar,"8,919",Oujda Angad,Oriental
+195,El Kbab,"8,541",Khenifra,Meknes-Tafilalet
+196,Oued Amlil,"8,246",Taza,Taza-Al Hoceima-Taounate
+197,Sidi Rahel Chatai,"8,140",Settat,Chaouia-Ouardigha
+198,Guigou,"7,976",Boulman,Fes-Boulemane
+199,Agdz,"7,951",Zagora,Souss-Massa-Draa
+200,Khnichet,"7,936",Sidi Kacem,Gharb-Chrarda-Beni Hssen
+201,Karia,"7,803",Jdida,Doukkala-Abda
+202,Sidi Ahmed,"7,751",Safi,Doukkala-Abda
+203,Zag,"7,751",Assa zag,Guelmim-Es Semara
+204,Oulad Yaich,"7,692",Beni Mellal,Tadla-Azilal
+205,Tinjdad,"7,481",Errachidia,Meknes-Tafilalet
+206,Ouad Laou,"7,478",Tetuan,Tangier-Tetouan
+207,Tighassaline,"7,336",Khenifra,Meknes-Tafilalet
+208,Tounfit,"7,277",Khenifra,Meknes-Tafilalet
+209,Bni Tadjite,"7,209",Figuig,Oriental
+210,Bouanane,"7,209",Figuig,Oriental
+211,Oulad Hriz Sahel,"7,149",Settat,Chaouia-Ouardigha
+212,Talsint,"7,098",Figuig,Oriental
+213,Taghjijt,"6,983",Guelmim,Guelmim-Es Semara
+214,Boulemane,"6,910",Boulman,Fes-Boulemane
+215,Zirara,"6,707",Sidi Kacem,Gharb-Chrarda-Beni Hssen
+216,Taouima,"6,641",Nador,Oriental
+217,Tahannaout,"6,582",Al Haouz,Marrakesh-Tensift-El Haouz
+218,Bradia,"6,546",Beni Mellal,Tadla-Azilal
+219,Moulay Abdallah,"6,482",Jdida,Doukkala-Abda
+220,Sidi Rahal,"6,352",Kelaat Sraghna,Marrakesh-Tensift-El Haouz
+221,Tameslouht,"6,346",Al Haouz,Marrakesh-Tensift-El Haouz
+222,Aghbala,"6,300",Beni Mellal,Tadla-Azilal
+223,El Ouatia,"6,294",Tan-Tan,Guelmim-Es Semara
+224,Tendrara,"6,254",Figuig,Oriental
+225,Taznakht,"6,185",Ouarzazate,Souss-Massa-Draa
+226,Fam El Hisn,"6,183",Tata,Guelmim-Es Semara
+227,Akka,"6,132",Tata,Guelmim-Es Semara
+228,Dar Gueddari,"6,011",Sidi Kacem,Gharb-Chrarda-Beni Hssen
+229,Itzer,"5,947",Khenifra,Meknes-Tafilalet
+230,Taliouine,"5,832",Taroudant,Souss-Massa-Draa
+231,Oualidia,"5,826",Jdida,Doukkala-Abda
+232,Aoulouz,"5,712",Taroudant,Souss-Massa-Draa
+233,Moulay Bousselham,"5,668",Kenitra,Gharb-Chrarda-Beni Hssen
+234,Tarfaya,"5,615",Layoune,Laayoune-Boujdour-Sakia El Hamra
+235,Ghafsai,"5,492",Taounate,Taza-Al Hoceima-Taounate
+236,Foum Jamaa,"5,360",Azilal,Tadla-Azilal
+237,Ain Leuh,"5,276",Ifran,Meknes-Tafilalet
+238,Moulay Bouazza,"5,241",Khenifra,Meknes-Tafilalet
+239,Kariat Arkmane,"5,228",Nador,Oriental
+240,Kehf Nsour,"5,089",Khenifra,Meknes-Tafilalet
+241,Sidi Bou Othmane,"5,066",Kelaat Sraghna,Marrakesh-Tensift-El Haouz
+242,Oulad Tayeb,"5,056",Fes,Fes-Boulemane
+243,Had Kourt,"5,051",Sidi Kacem,Gharb-Chrarda-Beni Hssen
+244,Bab Berrad,"5,043",Chefchawn,Tangier-Tetouan
+245,Loulad,"5,025",Settat,Chaouia-Ouardigha
+246,Zaida,"4,968",Khenifra,Meknes-Tafilalet
+247,Tafrawt,"4,924",Tiznit,Souss-Massa-Draa
+248,Khemis Sahel,"4,826",Larache,Tangier-Tetouan
+249,Ait Baha,"4,767",Chtouka Ait Baha,Souss-Massa-Draa
+250,Biougra,"4,767",Chtouka Ait Baha,Souss-Massa-Draa
+251,Dar Bni Karrich,"4,743",Tetuan,Tangier-Tetouan
+252,El Hanchane,"4,698",Essaouira,Marrakesh-Tensift-El Haouz
+253,Sidi Jaber,"4,693",Beni Mellal,Tadla-Azilal
+254,Irherm,"4,607",Taroudant,Souss-Massa-Draa
+255,Debdou,"4,575",Taourirt,Oriental
+256,Ras Kebdana,"4,532",Nador,Oriental
+257,Laaounate,"4,465",Jdida,Doukkala-Abda
+258,Hadj Kaddour,"4,362",Meknes,Meknes-Tafilalet
+259,Skhour Rhamna,"4,352",Kelaat Sraghna,Marrakesh-Tensift-El Haouz
+260,Bzou,"4,323",Azilal,Tadla-Azilal
+261,Ain Cheggag,"4,286",Sefrou,Fes-Boulemane
+262,Bouderbala,"4,258",El Hajeb,Meknes-Tafilalet
+263,Sidi Smail,"4,243",Jdida,Doukkala-Abda
+264,Oulad Zbair,"4,193",Taza,Taza-Al Hoceima-Taounate
+265,Bni Chiker,"4,188",Nador,Oriental
+266,Lakhsas,"4,178",Tiznit,Souss-Massa-Draa
+267,Talmest,"4,133",Essaouira,Marrakesh-Tensift-El Haouz
+268,Aknoul,"4,066",Taza,Taza-Al Hoceima-Taounate
+269,Tiztoutine,"4,041",Nador,Oriental
+270,Bab Taza,"4,006",Chefchawn,Tangier-Tetouan
+271,Imouzzer Marmoucha,"4,001",Boulman,Fes-Boulemane
+272,Gourrama,"3,987",Errachidia,Meknes-Tafilalet
+273,Ajdir,"3,987",Al Hoceima,Taza-Al Hoceima-Taounate
+274,Mhaya,"3,952",Meknes,Meknes-Tafilalet
+275,Oulad Ghadbane,"3,889",Jdida,Doukkala-Abda
+276,Zrarda,"3,860",Taza,Taza-Al Hoceima-Taounate
+277,Zoumi,"3,830",Chefchawn,Tangier-Tetouan
+278,Ain Karma,"3,828",Meknes,Meknes-Tafilalet
+279,Thar Essouk,"3,792",Taounate,Taza-Al Hoceima-Taounate
+280,Lagouira,"3,726",Aousserd,Oued Ed-Dahab-Lagouira
+281,Ras El Ain,"3,638",Settat,Chaouia-Ouardigha
+282,Sidi Ali Ben Hamdouche,"3,597",Jdida,Doukkala-Abda
+283,Sebt Jahjouh,"3,585",El Hajeb,Meknes-Tafilalet
+284,Tiddas,"3,584",Khmisset,Rabat-Sale-Zemmour-Zaer
+285,Zaouiat Bougrin,"3,570",Sefrou,Fes-Boulemane
+286,Tafersit,"3,555",Nador,Oriental
+287,Touissit,"3,429",Jrada,Oriental
+288,Saidia,"3,338",Berkane,Oriental
+289,Lalla Takerkoust,"3,337",Al Haouz,Marrakesh-Tensift-El Haouz
+290,Skhinate,"3,317",Fes,Fes-Boulemane
+291,Moulay Brahim,"3,252",Al Haouz,Marrakesh-Tensift-El Haouz
+292,Soualem,"3,243",Settat,Chaouia-Ouardigha
+293,Gueznaia,"3,187",Tanger-Assilah,Tangier-Tetouan
+294,Moulay Yacoub,"3,153",Moulay Yaccoub,Fes-Boulemane
+295,Sidi Allal Tazi,"3,140",Kenitra,Gharb-Chrarda-Beni Hssen
+296,Laakarta,"3,116",Safi,Doukkala-Abda
+297,Alnif,"3,072",Errachidia,Meknes-Tafilalet
+298,Dar El Kebdani,"2,990",Nador,Oriental
+299,Jebha,"2,984",Chefchawn,Tangier-Tetouan
+300,Ain Erreggada,"2,975",Berkane,Oriental
+301,Sidi Addi,"2,895",Ifran,Meknes-Tafilalet
+302,Skoura,"2,808",Ouarzazate,Souss-Massa-Draa
+303,Smimou,"2,675",Essaouira,Marrakesh-Tensift-El Haouz
+304,Ain Jemaa,"2,610",Meknes,Meknes-Tafilalet
+305,Timahdite,"2,507",Ifran,Meknes-Tafilalet
+306,Ait Daoud,"2,497",Essaouira,Marrakesh-Tensift-El Haouz
+307,Souk El Had,"2,488",Ifran,Meknes-Tafilalet
+308,Had Bouhssoussen,"2,421",Khenifra,Meknes-Tafilalet
+309,Oulad Said,"2,396",Settat,Chaouia-Ouardigha
+310,Arbaoua,"2,333",Kenitra,Gharb-Chrarda-Beni Hssen
+311,Ain Dorij,"2,321",Sidi Kacem,Gharb-Chrarda-Beni Hssen
+312,Madagh,"2,312",Berkane,Oriental
+313,Tighza,"2,217",Khenifra,Meknes-Tafilalet
+314,Matmata,"2,194",Taza,Taza-Al Hoceima-Taounate
+315,Kerouna,"2,188",Nador,Oriental
+316,Kassita,"2,126",Nador,Oriental
+317,Bni Hadifa,"2,061",Al Hoceima,Taza-Al Hoceima-Taounate
+318,Oued El Heimar,"1,997",Jrada,Oriental
+319,Kerrouchen,"1,967",Khenifra,Meknes-Tafilalet
+320,Tainaste,"1,905",Taza,Taza-Al Hoceima-Taounate
+321,Guisser,"1,890",Settat,Chaouia-Ouardigha
+322,Sidi Boubker,"1,878",Jrada,Oriental
+323,Tamassint,"1,788",Al Hoceima,Taza-Al Hoceima-Taounate
+324,Assahrij,"1,732",Kelaat Sraghna,Marrakesh-Tensift-El Haouz
+325,Aghbalou Nssardane,"1,703",Khenifra,Meknes-Tafilalet
+326,Tizi Ouasli,"1,695",Taza,Taza-Al Hoceima-Taounate
+327,Moqrisset,"1,680",Chefchawn,Tangier-Tetouan
+328,Sebt Lamaarif,"1,638",Jdida,Doukkala-Abda
+329,Issaguen,"1,638",Al Hoceima,Taza-Al Hoceima-Taounate
+330,Bouguedra,"1,558",Safi,Doukkala-Abda
+331,Brikcha,"1,510",Chefchawn,Tangier-Tetouan
+332,Ighoud,"1,475",Safi,Doukkala-Abda
+333,"Ajdir, Taza","1,451",Taounate,Taza-Al Hoceima-Taounate
+334,Oulad Amrane,"1,443",Jdida,Doukkala-Abda
+335,Kettara,"1,365",Marrakesh,Marrakesh-Tensift-El Haouz
+336,Aoufous,"1,272",Errachidia,Meknes-Tafilalet
+337,Tafetachte,"1,174",Essaouira,Marrakesh-Tensift-El Haouz
+338,Naima,"1,151",Oujda Angad,Oriental
+339,Tnin Sidi Lyamani,"1,101",Tanger-Assilah,Tangier-Tetouan
+340,Karia,"1,100",Tetuan,Tangier-Tetouan
+341,N'Zalat Bni Amar,"1,070",Meknes,Meknes-Tafilalet
+342,Ahrara,"1,028",Safi,Doukkala-Abda
+343,Sidi Abdallah Ghiat,986,Al Haouz,Marrakesh-Tensift-El Haouz
+344,Sidi Bouzid,981,Jdida,Doukkala-Abda
+345,Ounagha,912,Essaouira,Marrakesh-Tensift-El Haouz
+,,,,
+For other more formats kindly visit www.downloadexcelfiles.com,,,,
+,,,,
+Original source : en.wikipedia.org/wiki/List_of_cities_in_Morocco,,,,
