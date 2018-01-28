@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0043BA4593778741F7F2E1FB /* Pods_SmartCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A497F03CC449F37F778CBF85 /* Pods_SmartCity.framework */; };
 		F444ECBA201D644C0035D0B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444ECB9201D644C0035D0B0 /* AppDelegate.swift */; };
 		F444ECBC201D644C0035D0B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444ECBB201D644C0035D0B0 /* ViewController.swift */; };
 		F444ECBF201D644C0035D0B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F444ECBD201D644C0035D0B0 /* Main.storyboard */; };
@@ -16,9 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3106F3C7E83AA9AFDFB2163E /* Pods-SmartCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity/Pods-SmartCity.release.xcconfig"; sourceTree = "<group>"; };
-		57EE3D7705FB712662B47BE4 /* Pods-SmartCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity/Pods-SmartCity.debug.xcconfig"; sourceTree = "<group>"; };
-		A497F03CC449F37F778CBF85 /* Pods_SmartCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F444ECB6201D644C0035D0B0 /* SmartCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F444ECB9201D644C0035D0B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F444ECBB201D644C0035D0B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,37 +29,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0043BA4593778741F7F2E1FB /* Pods_SmartCity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A4618C3B3B47C9E982E7695 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				57EE3D7705FB712662B47BE4 /* Pods-SmartCity.debug.xcconfig */,
-				3106F3C7E83AA9AFDFB2163E /* Pods-SmartCity.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B235DF88813BE70CD9D137F7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A497F03CC449F37F778CBF85 /* Pods_SmartCity.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		F444ECAD201D644C0035D0B0 = {
 			isa = PBXGroup;
 			children = (
 				F444ECB8201D644C0035D0B0 /* SmartCity */,
 				F444ECB7201D644C0035D0B0 /* Products */,
-				6A4618C3B3B47C9E982E7695 /* Pods */,
-				B235DF88813BE70CD9D137F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,14 +54,94 @@
 		F444ECB8201D644C0035D0B0 /* SmartCity */ = {
 			isa = PBXGroup;
 			children = (
-				F444ECB9201D644C0035D0B0 /* AppDelegate.swift */,
+				F444ECCC201D667A0035D0B0 /* Scenes */,
+				F444ECCE201D668D0035D0B0 /* Models */,
+				F444ECCD201D66800035D0B0 /* Infrastructure */,
+				F444ECCB201D65D50035D0B0 /* Application Files */,
 				F444ECBB201D644C0035D0B0 /* ViewController.swift */,
 				F444ECBD201D644C0035D0B0 /* Main.storyboard */,
-				F444ECC0201D644C0035D0B0 /* Assets.xcassets */,
-				F444ECC2201D644C0035D0B0 /* LaunchScreen.storyboard */,
 				F444ECC5201D644C0035D0B0 /* Info.plist */,
 			);
 			path = SmartCity;
+			sourceTree = "<group>";
+		};
+		F444ECCB201D65D50035D0B0 /* Application Files */ = {
+			isa = PBXGroup;
+			children = (
+				F444ECB9201D644C0035D0B0 /* AppDelegate.swift */,
+				F444ECC0201D644C0035D0B0 /* Assets.xcassets */,
+				F444ECC2201D644C0035D0B0 /* LaunchScreen.storyboard */,
+			);
+			path = "Application Files";
+			sourceTree = "<group>";
+		};
+		F444ECCC201D667A0035D0B0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F444ECD1201D66A40035D0B0 /* Issue */,
+				F444ECD0201D669D0035D0B0 /* Authentication */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F444ECCD201D66800035D0B0 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		F444ECCE201D668D0035D0B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F444ECD0201D669D0035D0B0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F444ECD5201D66CE0035D0B0 /* Sign up */,
+				F444ECD4201D66C90035D0B0 /* Sign in */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F444ECD1201D66A40035D0B0 /* Issue */ = {
+			isa = PBXGroup;
+			children = (
+				F444ECD2201D66B10035D0B0 /* List ( Home ) */,
+				F444ECD3201D66BE0035D0B0 /* Report */,
+			);
+			path = Issue;
+			sourceTree = "<group>";
+		};
+		F444ECD2201D66B10035D0B0 /* List ( Home ) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "List ( Home )";
+			sourceTree = "<group>";
+		};
+		F444ECD3201D66BE0035D0B0 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		F444ECD4201D66C90035D0B0 /* Sign in */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign in";
+			sourceTree = "<group>";
+		};
+		F444ECD5201D66CE0035D0B0 /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign up";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,12 +151,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F444ECC8201D644C0035D0B0 /* Build configuration list for PBXNativeTarget "SmartCity" */;
 			buildPhases = (
-				E66B2348F64F12C2A16DB83B /* [CP] Check Pods Manifest.lock */,
 				F444ECB2201D644C0035D0B0 /* Sources */,
 				F444ECB3201D644C0035D0B0 /* Frameworks */,
 				F444ECB4201D644C0035D0B0 /* Resources */,
-				BB7890AE50AA1AE7B4978948 /* [CP] Embed Pods Frameworks */,
-				885E253B41793A2CC75ECDF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,82 +210,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		885E253B41793A2CC75ECDF9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity/Pods-SmartCity-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB7890AE50AA1AE7B4978948 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity/Pods-SmartCity-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity/Pods-SmartCity-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E66B2348F64F12C2A16DB83B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SmartCity-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F444ECB2201D644C0035D0B0 /* Sources */ = {
@@ -375,7 +352,6 @@
 		};
 		F444ECC9201D644C0035D0B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57EE3D7705FB712662B47BE4 /* Pods-SmartCity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -391,7 +367,6 @@
 		};
 		F444ECCA201D644C0035D0B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3106F3C7E83AA9AFDFB2163E /* Pods-SmartCity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
