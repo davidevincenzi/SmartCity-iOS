@@ -9,7 +9,15 @@
 import UIKit
 import PromiseKit
 
-class IssuesViewController: UIViewController, UITableViewDataSource {
+extension UINavigationController {
+    
+    open override var childViewControllerForStatusBarStyle: UIViewController? {
+        return childViewControllers.last
+    }
+    
+}
+
+class IssuesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // MARK: Views
     
@@ -30,8 +38,20 @@ class IssuesViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let navigationBar = navigationController?.navigationBar
+        navigationBar?.barTintColor = .black
+        navigationBar?.tintColor = .white
+        navigationBar?.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationBar?.isTranslucent = false
+        
         presenter.viewDidLoad()
         tableView.insertSubview(refreshControl, at: 0)
+        
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     // MARK: - UITableViewDataSource
@@ -43,7 +63,15 @@ class IssuesViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "issue-cell", for: indexPath) as! IssueTableViewCell
         presenter.configure(issueView: cell, at: indexPath)
+        cell.didToggleConfirmButton = { [unowned self] cell in
+            guard let indexPath = tableView.indexPath(for: cell) else { return }
+            self.presenter.didToggleConfirmButton(at: indexPath)
+        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
     
     // MARK: - User Interaction
@@ -104,7 +132,6 @@ extension IssuesViewController: IssuesViewInput {
         let viewController = IssueSelectorViewController.instantiate()
         let navigationController = UINavigationController(rootViewController: viewController)
         viewController.output.promise.then { issue -> Void in
-            guard let issue = issue else { return }
             self.presenter.didEndSelectingParentIssue(issue: issue)
         }
         viewController.setup(with: issues)

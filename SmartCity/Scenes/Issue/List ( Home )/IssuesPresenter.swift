@@ -90,8 +90,12 @@ class IssuesPresenter: IssuesPresenterInput {
                 return Promise<[Issue]>(value: [])
             }
         }.then { [unowned self] issues -> Promise<Issue?> in
-            self.view.routeToIssueSelector(issues: issues)
-            return issues.isEmpty ? Promise<Issue?>(value: nil) : self.parentIssuePromise.promise
+            if !issues.isEmpty {
+                self.view.routeToIssueSelector(issues: issues)
+                return self.parentIssuePromise.promise
+            } else {
+                return Promise<Issue?>(value: nil)
+            }
         }.then { [unowned self] _ -> Promise<JSON> in
             return Networking.request(target: .createIssue(self.createIssueParams))
         }.then { [weak self] _ -> Void in
@@ -103,14 +107,24 @@ class IssuesPresenter: IssuesPresenterInput {
         
     }
     
-    func didEndSelectingParentIssue(issue: Issue) {
+    func didEndSelectingParentIssue(issue: Issue?) {
         createIssueParams.parent = issue
         parentIssuePromise.fulfill(issue)
         parentIssuePromise = nil
     }
     
     func didToggleConfirmButton(at indexPath: IndexPath) {
-        print("Did toggle confirm button at \(indexPath)")
+        let viewModel = data[indexPath.row]
+        let increment = viewModel.confirmed ? -1 : 1
+        viewModel.confirms += increment
+        viewModel.set(confirmed: !viewModel.confirmed, notify: false)
+        
+        if viewModel.confirmed {
+            Networking.request(target: .confirmIssue(viewModel.model.id))
+        } else {
+            Networking.request(target: .unconfirmIssue(viewModel.model.id))
+        }
+        
     }
     
     func configure(issueView: IssueViewInput, at indexPath: IndexPath) {
@@ -150,7 +164,7 @@ protocol IssuesPresenterInput {
     
     func didEndEditingDescription(description: String)
     
-    func didEndSelectingParentIssue(issue: Issue)
+    func didEndSelectingParentIssue(issue: Issue?)
     
     func didToggleConfirmButton(at indexPath: IndexPath)
     

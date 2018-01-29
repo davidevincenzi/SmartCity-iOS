@@ -52,7 +52,7 @@ class IssueDescriptionEditingViewController: UIViewController, UITextViewDelegat
     
     // MARK: - User Interaction
     
-    @IBAction func didClickCancelButton() {
+    private func didClickCancelButton() {
         dismiss(animated: true, completion: nil)
     }
     

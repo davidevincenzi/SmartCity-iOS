@@ -48,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Global appearence
         let navAppearence = UINavigationBar.appearance()
         navAppearence.tintColor = UIColor(named: .PrimaryColor)
+        navAppearence.barTintColor = .white
         
         return true
     }

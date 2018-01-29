@@ -20,6 +20,9 @@ enum Backend {
     case findIssues(String)
     case findSimilarIssues(CLLocationCoordinate2D)
     case createIssue(CreateIssueParams)
+    case confirmIssue(Int)
+    case unconfirmIssue(Int)
+    
     
 }
 
@@ -35,6 +38,8 @@ extension Backend: TargetType {
         case .signUp: return "/auth/sign_up"
         case .findIssues: return "/issues"
         case .createIssue, .findSimilarIssues: return "/issues"
+        case .confirmIssue(let id): return "/issues/\(id)/confirm"
+        case .unconfirmIssue(let id): return "/issues/\(id)/unconfirm"
         }
     }
     var method: Moya.Method {
@@ -43,7 +48,9 @@ extension Backend: TargetType {
         case .signIn, .signUp,
              .createIssue:
             return .post
-        case  .findIssues, .findSimilarIssues:
+        case  .findIssues, .findSimilarIssues,
+              .confirmIssue,
+              .unconfirmIssue:
             return .get
         }
         
@@ -62,6 +69,7 @@ extension Backend: TargetType {
             return params.toJSON()
         case .findSimilarIssues(let coordinate):
             return ["latitude": coordinate.latitude, "longitude": coordinate.longitude]
+        default: return nil
         }
         
     }

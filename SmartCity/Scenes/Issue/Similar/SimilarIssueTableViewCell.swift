@@ -8,28 +8,34 @@
 
 import UIKit
 
-class SimilarIssueTableViewCell: UITableViewCell {
+class SimilarIssueTableViewCell: IssueTableViewCell {
     
-    var viewModel: IssueViewModel? {
-        didSet {
-            guard let viewModel = self.viewModel else { return }
-            configure(using: viewModel)
-        }
-    }
+    @IBOutlet weak var checkmarkImageView: UIImageView!
+    
+    var onCellTapped: ((SimilarIssueTableViewCell) -> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         tintColor = UIColor(named: .PrimaryColor)
     }
     
-    private func configure(using viewModel: IssueViewModel) {
-        
-        textLabel?.text = "Similar issue ID: \(viewModel.model.id)"
+    override func configure(using viewModel: IssueViewModel) {
+        super.configure(using: viewModel)
         
         viewModel.onSelectedChange = { selected in
-            self.accessoryType = selected ? .checkmark : .none
+            self.checkmarkImageView?.isHidden = !selected
         }
         
+    }
+    
+    @IBAction func didTapCell(_ sender: UIControl) {
+        onCellTapped?(self)
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+    }
+    
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
     }
     
 }

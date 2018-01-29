@@ -59,6 +59,8 @@
 		F4E37FFA201E96D400410753 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4E37FF9201E96D400410753 /* GoogleService-Info.plist */; };
 		F4E37FFD201EA87200410753 /* IssueSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E37FFC201EA87200410753 /* IssueSelectorViewController.swift */; };
 		F4E37FFF201EAA4600410753 /* SimilarIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E37FFE201EAA4600410753 /* SimilarIssueTableViewCell.swift */; };
+		F4E38001201EB3AA00410753 /* IssueSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E38000201EB3AA00410753 /* IssueSampleView.swift */; };
+		F4E38003201EB3C000410753 /* IssueSampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E38002201EB3C000410753 /* IssueSampleView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +119,8 @@
 		F4E37FF9201E96D400410753 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4E37FFC201EA87200410753 /* IssueSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueSelectorViewController.swift; sourceTree = "<group>"; };
 		F4E37FFE201EAA4600410753 /* SimilarIssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarIssueTableViewCell.swift; sourceTree = "<group>"; };
+		F4E38000201EB3AA00410753 /* IssueSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueSampleView.swift; sourceTree = "<group>"; };
+		F4E38002201EB3C000410753 /* IssueSampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssueSampleView.xib; sourceTree = "<group>"; };
 		F922E8CE9024A87FD8D09E65 /* Pods-SmartCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity/Pods-SmartCity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,6 +254,8 @@
 				F476E7FC201E64EC0083A38B /* Create */,
 				F444ECD2201D66B10035D0B0 /* List ( Home ) */,
 				F444ECD3201D66BE0035D0B0 /* Report */,
+				F4E38000201EB3AA00410753 /* IssueSampleView.swift */,
+				F4E38002201EB3C000410753 /* IssueSampleView.xib */,
 			);
 			path = Issue;
 			sourceTree = "<group>";
@@ -506,6 +512,7 @@
 			files = (
 				F444ECDF201DD9600035D0B0 /* Authentication.storyboard in Resources */,
 				F444ECC4201D644C0035D0B0 /* LaunchScreen.storyboard in Resources */,
+				F4E38003201EB3C000410753 /* IssueSampleView.xib in Resources */,
 				F444ECC1201D644C0035D0B0 /* Assets.xcassets in Resources */,
 				F444ED3A201E42CD0035D0B0 /* cities.csv in Resources */,
 				F444ECF1201DDB750035D0B0 /* errors.plist in Resources */,
@@ -558,6 +565,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SmartCity/Pods-SmartCity-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FaveButton/FaveButton.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
@@ -576,6 +584,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FaveButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
@@ -624,6 +633,7 @@
 				F444ECF4201DDB900035D0B0 /* UIViewControllerAnimatedTransitioning+Additions.swift in Sources */,
 				F444ECBA201D644C0035D0B0 /* AppDelegate.swift in Sources */,
 				F444ED2C201E33990035D0B0 /* Preference.swift in Sources */,
+				F4E38001201EB3AA00410753 /* IssueSampleView.swift in Sources */,
 				F444ED26201E2FBC0035D0B0 /* CitiesSelectorViewController.swift in Sources */,
 				F444ED2E201E363F0035D0B0 /* IssuesViewController.swift in Sources */,
 				F444ECD9201DD9590035D0B0 /* SignUpViewController.swift in Sources */,

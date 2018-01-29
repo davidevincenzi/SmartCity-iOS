@@ -43,6 +43,8 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need access to your location</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

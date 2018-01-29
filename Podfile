@@ -29,5 +29,6 @@ target 'SmartCity' do
 	# UI
 	pod 'MBProgressHUD'
 	pod 'SwiftRichString', '~> 1.0.0'
+    pod 'FaveButton', '~> 2.0.3'
 
 end
