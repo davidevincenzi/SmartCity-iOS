@@ -57,6 +57,8 @@
 		F476E800201E7A200083A38B /* IssueDescriptionEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476E7FF201E7A200083A38B /* IssueDescriptionEditingViewController.swift */; };
 		F4E37FF8201E954100410753 /* StorageServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E37FF7201E954100410753 /* StorageServices.swift */; };
 		F4E37FFA201E96D400410753 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4E37FF9201E96D400410753 /* GoogleService-Info.plist */; };
+		F4E37FFD201EA87200410753 /* IssueSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E37FFC201EA87200410753 /* IssueSelectorViewController.swift */; };
+		F4E37FFF201EAA4600410753 /* SimilarIssueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E37FFE201EAA4600410753 /* SimilarIssueTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +115,8 @@
 		F476E7FF201E7A200083A38B /* IssueDescriptionEditingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueDescriptionEditingViewController.swift; sourceTree = "<group>"; };
 		F4E37FF7201E954100410753 /* StorageServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageServices.swift; sourceTree = "<group>"; };
 		F4E37FF9201E96D400410753 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4E37FFC201EA87200410753 /* IssueSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueSelectorViewController.swift; sourceTree = "<group>"; };
+		F4E37FFE201EAA4600410753 /* SimilarIssueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarIssueTableViewCell.swift; sourceTree = "<group>"; };
 		F922E8CE9024A87FD8D09E65 /* Pods-SmartCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCity/Pods-SmartCity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +246,7 @@
 		F444ECD1201D66A40035D0B0 /* Issue */ = {
 			isa = PBXGroup;
 			children = (
+				F4E37FFB201EA85C00410753 /* Similar */,
 				F476E7FC201E64EC0083A38B /* Create */,
 				F444ECD2201D66B10035D0B0 /* List ( Home ) */,
 				F444ECD3201D66BE0035D0B0 /* Report */,
@@ -428,6 +433,15 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		F4E37FFB201EA85C00410753 /* Similar */ = {
+			isa = PBXGroup;
+			children = (
+				F4E37FFC201EA87200410753 /* IssueSelectorViewController.swift */,
+				F4E37FFE201EAA4600410753 /* SimilarIssueTableViewCell.swift */,
+			);
+			path = Similar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -603,6 +617,7 @@
 				F444ED0B201DDF1B0035D0B0 /* Networking.swift in Sources */,
 				F444ED18201DE0BE0035D0B0 /* NSError+Additions.swift in Sources */,
 				F444ECE4201DDA750035D0B0 /* KeyboardHideManager.swift in Sources */,
+				F4E37FFD201EA87200410753 /* IssueSelectorViewController.swift in Sources */,
 				F444ECE0201DD9600035D0B0 /* AuthenticationFormViewController.swift in Sources */,
 				F444ED28201E2FDB0035D0B0 /* CityTableViewCell.swift in Sources */,
 				F444ED30201E38D40035D0B0 /* IssuesPresenter.swift in Sources */,
@@ -619,6 +634,7 @@
 				F476E800201E7A200083A38B /* IssueDescriptionEditingViewController.swift in Sources */,
 				F444ED1C201DE22D0035D0B0 /* RootViewController.swift in Sources */,
 				F444ED32201E39230035D0B0 /* IssueTableViewCell.swift in Sources */,
+				F4E37FFF201EAA4600410753 /* SimilarIssueTableViewCell.swift in Sources */,
 				F444ED38201E3CFF0035D0B0 /* Issue.swift in Sources */,
 				F444ED3D201E44320035D0B0 /* CSwiftV.swift in Sources */,
 				F444ED1E201DE2860035D0B0 /* ChildViewControllerContextTransitioning.swift in Sources */,

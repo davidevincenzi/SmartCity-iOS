@@ -12,6 +12,18 @@ class IssueViewModel {
     
     let model: Issue
     
+    var onSelectedChange: ((Bool) -> ())? {
+        didSet {
+            onSelectedChange?(selected)
+        }
+    }
+    
+    var selected = false {
+        didSet {
+            onSelectedChange?(selected)
+        }
+    }
+    
     init(model: Issue) {
         self.model = model
     }

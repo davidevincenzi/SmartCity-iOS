@@ -101,11 +101,14 @@ extension IssuesViewController: IssuesViewInput {
     }
     
     func routeToIssueSelector(issues: [Issue]) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [unowned self] in
-            if let issue = issues.first {
-                self.presenter.didEndSelectingParentIssue(issue: issue)
-            }
+        let viewController = IssueSelectorViewController.instantiate()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        viewController.output.promise.then { issue -> Void in
+            guard let issue = issue else { return }
+            self.presenter.didEndSelectingParentIssue(issue: issue)
         }
+        viewController.setup(with: issues)
+        present(navigationController, animated: true, completion: nil)
     }
 
 }

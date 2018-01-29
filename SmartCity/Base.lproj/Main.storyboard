@@ -270,7 +270,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ohk-Wr-FqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2222" y="-1590"/>
+            <point key="canvasLocation" x="2222" y="-1648"/>
+        </scene>
+        <!--Similar Issues-->
+        <scene sceneID="o4X-wX-il7">
+            <objects>
+                <viewController storyboardIdentifier="IssueSelectorViewController" title="Similar Issues" id="xN2-sK-Hag" customClass="IssueSelectorViewController" customModule="SmartCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qn7-1o-ti4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cDW-hl-wxh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="issue-cell" textLabel="qnf-wO-r67" style="IBUITableViewCellStyleDefault" id="sbc-Ks-8ut" customClass="SimilarIssueTableViewCell" customModule="SmartCity" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sbc-Ks-8ut" id="Ze1-L1-FjT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qnf-wO-r67">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xN2-sK-Hag" id="nzg-3Q-sui"/>
+                                    <outlet property="delegate" destination="xN2-sK-Hag" id="kKe-qX-X2K"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cDW-hl-wxh" firstAttribute="leading" secondItem="9bY-9c-f5l" secondAttribute="leading" id="5YV-0M-E4w"/>
+                            <constraint firstItem="cDW-hl-wxh" firstAttribute="bottom" secondItem="9bY-9c-f5l" secondAttribute="bottom" id="BXB-EP-UZ5"/>
+                            <constraint firstItem="cDW-hl-wxh" firstAttribute="top" secondItem="Qn7-1o-ti4" secondAttribute="top" id="JvK-JH-uTN"/>
+                            <constraint firstItem="cDW-hl-wxh" firstAttribute="trailing" secondItem="9bY-9c-f5l" secondAttribute="trailing" id="MV1-UJ-Frh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9bY-9c-f5l"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Similar Issues" id="qV8-7f-n2l">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="TyR-kh-J4E">
+                            <connections>
+                                <action selector="didClickCancelButton" destination="xN2-sK-Hag" id="FE5-TZ-HqP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Wzf-z9-3Hl">
+                            <connections>
+                                <action selector="didClickDoneButton" destination="xN2-sK-Hag" id="Abk-5b-XfX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="cDW-hl-wxh" id="Llj-1B-F7x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKH-yo-OaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3152.8000000000002" y="-1648.4257871064469"/>
         </scene>
     </scenes>
     <resources>
