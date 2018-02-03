@@ -132,6 +132,15 @@ class IssuesPresenter: IssuesPresenterInput {
         issueView.viewModel = issue
     }
     
+    func didClickViewInMaps(at indexPath: IndexPath) {
+        let issue = data[indexPath.row].model
+        guard let coordinate = issue.coordinate else { return }
+        let string = "comgooglemaps://?q=&center=\(coordinate.latitude),\(coordinate.longitude)&zoom=14"
+        if let url = URL(string: string) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
     // MARK: - Helpers
     
     private func filling(params: CreateIssueParams) -> Promise<CreateIssueParams> {
@@ -167,6 +176,8 @@ protocol IssuesPresenterInput {
     func didEndSelectingParentIssue(issue: Issue?)
     
     func didToggleConfirmButton(at indexPath: IndexPath)
+    
+    func didClickViewInMaps(at indexPath: IndexPath)
     
     func configure(issueView: IssueViewInput, at indexPath: IndexPath)
     

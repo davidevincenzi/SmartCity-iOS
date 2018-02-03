@@ -27,6 +27,7 @@ class IssueTableViewCell: UITableViewCell, IssueViewInput, FaveButtonDelegate, U
     
     // MARK: Output
     
+    var didTriggerLongPress: ((IssueTableViewCell) -> ())?
     var didToggleConfirmButton: ((IssueTableViewCell) -> ())?
     
     // MARK: -
@@ -34,7 +35,12 @@ class IssueTableViewCell: UITableViewCell, IssueViewInput, FaveButtonDelegate, U
     override func awakeFromNib() {
         super.awakeFromNib()
         confirmButton.addTarget(self, action: #selector(toggleConfirmButton), for: .touchUpInside)
-        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress(gesture:)))
+        addGestureRecognizer(longPressGesture)
+    }
+    
+    @objc private func longPress(gesture: UILongPressGestureRecognizer) {
+        didTriggerLongPress?(self)
     }
     
     @objc private func toggleConfirmButton() {

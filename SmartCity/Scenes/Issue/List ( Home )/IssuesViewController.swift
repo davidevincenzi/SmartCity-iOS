@@ -63,10 +63,24 @@ class IssuesViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "issue-cell", for: indexPath) as! IssueTableViewCell
         presenter.configure(issueView: cell, at: indexPath)
+        
         cell.didToggleConfirmButton = { [unowned self] cell in
             guard let indexPath = tableView.indexPath(for: cell) else { return }
             self.presenter.didToggleConfirmButton(at: indexPath)
         }
+        
+        cell.didTriggerLongPress = { [unowned self] cell in
+            let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+            let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            let maps = UIAlertAction(title: "View in Maps", style: .default, handler: { (_) in
+                guard let indexPath = self.tableView.indexPath(for: cell) else { return }
+                self.presenter.didClickViewInMaps(at: indexPath)
+            })
+            alertController.addAction(cancel)
+            alertController.addAction(maps)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
         return cell
     }
     
@@ -83,6 +97,7 @@ class IssuesViewController: UIViewController, UITableViewDataSource, UITableView
     @IBAction private func didClickAddButton() {
         guard let user = User.current else { return }
         let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .camera
         let imagePromise: Promise<UIImage> = promise(imagePicker)
         
         showSpinner()
